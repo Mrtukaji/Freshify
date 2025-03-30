@@ -1,11 +1,15 @@
 /* Basic reset and body styles */
 body {
-    background: linear-gradient(135deg, #2c3e50, #3498db);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
     min-height: 100vh;
-    color: #2c3e50;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Header styles */
@@ -15,36 +19,39 @@ header {
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     color: #ffffff;
     margin: 0;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-size: 3em;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-    color: #204047;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 1.8em;
+    font-size: 2em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Main content styles */
 main {
-    max-width: 600px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }
 
 /* Input section styles */
 .input-section {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .input-group {
@@ -55,8 +62,8 @@ main {
 
 label {
     font-weight: 600;
-    color: #2c3e50;
-    font-size: 1.1em;
+    color: #ffffff;
+    font-size: 1.2em;
 }
 
 input[type="text"],
@@ -65,13 +72,14 @@ input[type="number"] {
     border: 2px solid #bdc3c7;
     border-radius: 8px;
     font-size: 16px;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input[type="text"]:focus,
 input[type="number"]:focus {
     border-color: #3498db;
     outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
 }
 
 button {
@@ -83,27 +91,28 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
     background: #c0392b;
     transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(192, 57, 43, 0.4);
 }
 
 /* List section styles */
 .list-section {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
 }
 
 .item {
@@ -111,12 +120,13 @@ button:hover {
     align-items: center;
     gap: 15px;
     padding: 12px;
-    border-bottom: 2px solid #ecf0f1;
-    transition: background-color 0.2s ease;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .item:hover {
-    background: rgba(236, 240, 241, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
 }
 
 .item:last-child {
@@ -131,10 +141,12 @@ input[type="checkbox"] {
 
 .item label {
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    color: #ffffff;
 }
 
 .freshify {
     color: #26c43b;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
