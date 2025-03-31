@@ -262,3 +262,32 @@ footer p {
     color: #f39c12;
     transform: scale(1.2);
 }
+
+/* Edit and Delete Buttons */
+.edit-btn, .delete-btn {
+    background: #e67e22;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edit-btn:hover {
+    background: #d35400;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(211, 84, 0, 0.4);
+}
+
+.delete-btn {
+    background: #e74c3c;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(192, 57, 43, 0.4);
+}
